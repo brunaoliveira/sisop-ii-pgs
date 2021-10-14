@@ -9,5 +9,5 @@
 ### Running PG2
 ```
   cd sisop-ii-pgs/PG2_WebServices
-  javac -cp "jersey-bundle-1.19.jar" webservice/*.java
+  javac -cp "jersey-bundle-1.19.jar" *.java
 ```
