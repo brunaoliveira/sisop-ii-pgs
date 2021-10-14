@@ -25,10 +25,10 @@ public class ChatServer {
     @OnClose
     public void closeSession(Session closingSession) {
         if (sessions.remove(closingSession)) {
-            logger.info("Session closed: " + closingSession.getId());
+            logger.info(String.format("Session closed: %d", closingSession.getId()));
         }
         else {
-            logger.warning("Session is not being tracked: " + closingSession.getId());
+            logger.warning(String.format("Session is not being tracked: %d", closingSession.getId()));
         }
     }
 
