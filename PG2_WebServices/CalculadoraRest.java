@@ -12,14 +12,14 @@ public class CalculadoraRest {
     @Path("somarInt/{a}/{b}")
     @Produces(MediaType.APPLICATION_JSON)
     @GET
-    public somarInt(@PathParam("a") int op1,@PathParam("b") int op2) {
-
+    public Calculadora somarInt(@PathParam("a") int a, @PathParam("b") int b) {
+        return new Calculadora(a, b, "+");
     }
 
     @Path("multiplicarInt/{a}/{b}")
     @Produces(MediaType.APPLICATION_JSON)
     @GET
-    public multiplicarInt(@PathParam("a") int op1, @PathParam("b") int op2) {
-
+    public Calculadora multiplicarInt(@PathParam("a") int a, @PathParam("b") int b) {
+        return new Calculadora(a, b, "*");
     }
 }
