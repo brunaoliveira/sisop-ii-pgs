@@ -1,5 +1,7 @@
 package webservice;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement
 public class Calculadora {
 
     private String operador;
