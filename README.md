@@ -1,7 +1,13 @@
-# websockets
+# Sisop II - Programação guiada
 
-### Running
+### Running PG1
 ```
-  cd PG1_Websockets/PG1_Websockets
+  cd sisop-ii-pgs/PG1_Websockets
   mvn jetty:run
+```
+
+### Running PG2
+```
+  cd sisop-ii-pgs/PG2_WebServices
+  javac -cp "jersey-bundle-1.19.jar" webservice/*.java
 ```
