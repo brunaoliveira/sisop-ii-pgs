@@ -3,7 +3,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class Calculadora {
-
     private String operador;
     private int operando1;
     private int operando2;
@@ -17,7 +16,8 @@ public class Calculadora {
         this.operando2 = op2;
 	    this.operador = oper;
     	this.erro = "";
-	this.resultado = 0;
+	    this.resultado = 0;
+
 	if (oper == "+")
     		this.resultado = op1 + op2;
     	else if (oper == "*")
@@ -26,39 +26,39 @@ public class Calculadora {
     		this.erro = "Operação não suportada!";
     }
 
-    public void setOperando1(int op1){
+    public void setOperando1(int op1) {
         this.operando1 = op1;
     }
     
-    public void setOperando2(int op2){
+    public void setOperando2(int op2) {
         this.operando2 = op2;
     }
 
-    public void setOperador(String opr){
+    public void setOperador(String opr) {
         this.operador = opr;
     }
 
-    public void setResultado(int res){
+    public void setResultado(int res) {
 	    this.resultado = res;
     }    
 
-    public void setErro(String erro){
+    public void setErro(String erro) {
     	this.erro = erro;
     }    
 
-    public int getOperando1(){
+    public int getOperando1() {
         return this.operando1;
     }
     
-    public int getOperando2(){
+    public int getOperando2() {
         return this.operando2;
     }
 
-    public int getResultado(){
+    public int getResultado() {
         return this.resultado;
     }
 
-    public String getOperador(){
+    public String getOperador() {
     	return this.operador;
     }
 
